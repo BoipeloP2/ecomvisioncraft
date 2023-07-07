@@ -16,7 +16,7 @@ const ResetPassword = () => {
                 <h3 className='text-center mb-3'>Reset Password</h3>
                 <form action="" className='d-flex flex-column gap-30'>
                         <CustomInput type="password" name="password" placeholder='Password' />
-                        <CustomInputput type="password" name="confirmpassword" placeholder='Confirm Password'/>
+                        <CustomInput type="password" name="confirmpassword" placeholder='Confirm Password'/>
                     <div className='mt-2'>
                         <div className="d-flex justify-content-center gap-15 mt-2 align-items-center">
                             <button type="submit" className='button border-0'>Reset</button>
