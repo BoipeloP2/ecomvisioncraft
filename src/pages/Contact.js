@@ -2,6 +2,8 @@ import React from 'react'
 import BreadCrumb from '../components/BreadCrumb';
 import {AiOutlineHome, AiOutlineMail} from "react-icons/ai";
 import {BiPhoneCall, BiInfoCircle} from "react-icons/bi";
+import Container from '../components/Container';
+import CustomInput from '../components/CustomInput'
 
 
 const Contact = () => {
@@ -9,8 +11,7 @@ const Contact = () => {
     <>  
       <BreadCrumb title="Contact us"/>
 
-      <div className="contact-wrapper home-wrapper py-5">
-        <div className="container-xxl">
+      <Container class1="contact-wrapper home-wrapper py-5">
           <div className="row">
             <div className="col-12">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14372.552244133247!2d28.23201175227478!3d-25.766002987583644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561a8172dda0f%3A0x476361a522de0976!2sBrooklyn%2C%20Pretoria%2C%200181!5e0!3m2!1sen!2sza!4v1687726614459!5m2!1sen!2sza"
@@ -26,9 +27,9 @@ const Contact = () => {
               <div>
                   <h3 className="contact-title mb-4">Contact</h3>
                   <form action="" className='d-flex flex-column gap-15'>
-                    <div><input type="text" className="form-control" placeholder="Name" /></div>
-                    <div><input type="email" className="form-control" placeholder="Email" /></div>
-                    <div><input type="tel" className="form-control" placeholder="Mobile Number" /></div>
+                    <CustomInput type="text"  placeholder="Name" />
+                    <CustomInput type="email"  placeholder="Email" />
+                    <CustomInput type="tel"  placeholder="Mobile Number" />
                     <div><textarea className="w-100 form-control" cols="30" rows="5" placeholder="Comment" ></textarea></div>
                     <div>
                   <button className='button border-0'> Send</button>
@@ -61,8 +62,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </Container>
     </>
   )
 }

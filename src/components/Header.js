@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import Container from "./Container";
 
 const Header = () => {
   return (
     <>
-      <header className="header-top-strip py-3">
-        <div className="container-xxl">
+      <Container class1="header-top-strip py-3">
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">Free shipping over R500 </p>
@@ -20,10 +20,8 @@ const Header = () => {
               </p>
             </div>
           </div>
-        </div>
-      </header>
-      <header className="header-upper py-3">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="header-upper py-3">
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
@@ -31,7 +29,7 @@ const Header = () => {
               </h2>
             </div>
             <div className="col-5">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
                   className="form-control py-2"
@@ -83,10 +81,8 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
-      </header>
-      <header className="header-bottom py-3">
-        <div className="container-xxl">
+      </Container>
+      <Container class1="header-bottom py-3">
           <div className="row">
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
@@ -143,8 +139,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
-      </header>
+      </Container>
     </>
   );
 };

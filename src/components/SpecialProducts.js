@@ -17,7 +17,7 @@ const SpecialProducts = () => {
               <ReactStars
                 count={5}
                 size={24}
-                value="3"
+                value={3}
                 edit={false}
                 activeColor="#ffd700"
               />
@@ -44,7 +44,7 @@ const SpecialProducts = () => {
                 </div>
                 <div className="prod-count my-3">
                   <p>Products: 5</p>
-                  <div class="progress">
+                  <div className="progress">
                     <div
                       className="progress-bar"
                       role="progressbar"
